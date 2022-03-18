@@ -32,5 +32,13 @@ namespace eTickets.Controllers
             return View(movieDetails);
         }
 
+        //Get: Movies/Create
+        public IActionResult Create()
+        {
+            ViewData["Welcome"] = "Welcome to our Store";
+            ViewBag.msg = "Hi Welcome to our store";
+            return View();
+        }
+
     }
 }
